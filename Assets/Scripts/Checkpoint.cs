@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Checkpoint : MonoBehaviour {
     private Vector3 _lastCheckpointPosition;
     private Quaternion _lastCheckpointRotation;
 
+    public Text text;
+
 	void Start() {
         _lastCheckpointPosition = Vector3.zero;
-	}
+    }
 
     void Update() {
         if (Input.GetKeyDown(KeyCode.R)) {
@@ -26,6 +29,15 @@ public class Checkpoint : MonoBehaviour {
             Debug.Log("Checkpoint!");
             _lastCheckpointPosition = transform.position;
             _lastCheckpointRotation = transform.rotation;
+            text.enabled = true;
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Checkpoint")
+        {
+            text.enabled = false;
         }
     }
 }

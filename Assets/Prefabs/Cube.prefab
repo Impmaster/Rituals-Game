@@ -27,9 +27,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 144326}
-  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106709}
-  m_LocalPosition: {x: 33, y: 0, z: 0}
-  m_LocalScale: {x: 20, y: 4, z: 4}
+  m_LocalRotation: {x: 0, y: -.707106829, z: 0, w: .707106709}
+  m_LocalPosition: {x: -15.4700003, y: -16.3999996, z: 11.0200005}
+  m_LocalScale: {x: 1.5, y: .706408322, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,8 +74,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .999999762, y: .373290062, z: .999999881}
-  m_Center: {x: 7.10542693e-16, y: .66163826, z: 4.23516474e-22}
+  m_Size: {x: .999999642, y: 1.41254556, z: .999999881}
+  m_Center: {x: 0, y: 1.18126643, z: -0}
 --- !u!65 &6591656
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -99,9 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2a830a54aafc394993abbb4ce84adf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
-  Axis: 2
-  Distance: 10
+  Speed: 5
+  Axis: 0
+  Distance: -6
 --- !u!114 &11470616
 MonoBehaviour:
   m_ObjectHideFlags: 1

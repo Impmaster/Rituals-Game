@@ -12,7 +12,7 @@ public class Spin : MonoBehaviour
     {
 
         //oldRotation = transform.localRotation;
-        transform.localRotation *= Quaternion.AngleAxis(360 / Speed * Time.deltaTime, Vector3.up);
+        transform.rotation *= Quaternion.AngleAxis(360 / Speed * Time.deltaTime, Vector3.up);
 
 
         

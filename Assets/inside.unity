@@ -479,6 +479,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PushForce: .300000012
+--- !u!114 &152645052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 152645045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae7f48c3adb04764bc14bc9aa2d44e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &163895798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,7 +1288,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cb248394b7726f348aeebe85c04abd0b, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cb248394b7726f348aeebe85c04abd0b, type: 3}
       propertyPath: m_LocalScale.x
@@ -1328,7 +1339,7 @@ Transform:
   - {fileID: 2010107915}
   - {fileID: 840545515}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
 --- !u!1001 &395995748
 Prefab:
   m_ObjectHideFlags: 0
@@ -2341,9 +2352,10 @@ GameObject:
   - 33: {fileID: 840545518}
   - 65: {fileID: 840545517}
   - 23: {fileID: 840545516}
+  - 65: {fileID: 840545519}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2371,7 +2383,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a2b25655d8b5d4c46b9b9f3bfb51df2b, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -2406,6 +2418,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 840545514}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &840545519
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 840545514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .999999881, y: 2.38204813, z: .999999762}
+  m_Center: {x: 5.65564221e-07, y: .691023231, z: -7.52210644e-06}
 --- !u!4 &880681870 stripped
 Transform:
   m_PrefabParentObject: {fileID: 401318, guid: 24c8cd15e844e264b89196d062a4468e, type: 2}
@@ -2619,7 +2643,7 @@ Transform:
   - {fileID: 548172563}
   - {fileID: 241684009}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 23
 --- !u!1 &1098453308
 GameObject:
   m_ObjectHideFlags: 0

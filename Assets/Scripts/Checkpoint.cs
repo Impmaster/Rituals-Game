@@ -8,7 +8,13 @@ public class Checkpoint : MonoBehaviour {
         _lastCheckpointPosition = Vector3.zero;
 	}
 
-    public void Restore() {
+    void Update() {
+        if (Input.GetKeyDown(KeyCode.R)) {
+            Respawn();
+        }
+    }
+
+    public void Respawn() {
         if (_lastCheckpointPosition != Vector3.zero) {
             transform.position = _lastCheckpointPosition;
             transform.rotation = _lastCheckpointRotation;

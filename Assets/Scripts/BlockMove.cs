@@ -20,7 +20,7 @@ public class BlockMove : MonoBehaviour
 
     void Start()
     {
-        _origin = transform.position;
+        _origin = transform.localPosition;
     }
 
     void Update()
@@ -44,14 +44,12 @@ public class BlockMove : MonoBehaviour
         // Translate
         oldPosition = newPosition;
         newPosition = _origin + axis * Distance * pos;
-        transform.position = newPosition;
-        
-        
+        transform.localPosition = newPosition;
+
         if (playerOnTop)
         {
             player.transform.position += (newPosition - oldPosition);
         }
-
     }
 
     private float easeInOutSine(float t, float b, float c, float d)
@@ -59,7 +57,7 @@ public class BlockMove : MonoBehaviour
         // based on http://gizma.com/easing/#sin3
         return -c / 2 * (Mathf.Cos(Mathf.PI * t / d) - 1) + b;
     }
-    
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "FPSController")
@@ -75,5 +73,5 @@ public class BlockMove : MonoBehaviour
         {
             playerOnTop = false;
         }
-    } 
+    }
 }

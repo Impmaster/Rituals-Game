@@ -9,3 +9,5 @@ EditorBuildSettings:
     path: Assets/Scene 1.unity
   - enabled: 1
     path: Assets/inside.unity
+  - enabled: 1
+    path: Assets/Scene 3.unity
